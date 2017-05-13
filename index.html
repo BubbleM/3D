@@ -1,122 +1,43 @@
-<!doctype html>
-<html lang="en">
- <head>
- <!--声明当前页面的编码 国际编码UTF-8 中文编码GBK-->
-  <meta charset="UTF-8">
- <!--声明当前页面的三要素-->
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <title>CSS3制作3D旋转球体</title>
- 
- <style type="text/css">
-	*{
-		margin:0;
-		padding:0;
-	  }
-	body{background-color:#000;}
-	.wrapper{margin:150px auto 0;}
-	.wrapper,.x,.y,.z{
-		width:200px;
-		height:200px;
-		//background:red;
-		border-radius:50%;
-	}
-	.y,.z,.xInner,.yInner,.zInner{
-		position:absolute;
-	}
-	.x1,.x2,.y1,.y2,.z1,.z2{
-		width:87.5%;
-		height:87.5%;
-		border-radius:50%;/*圆*/
-		position:absolute;
-		top:6.25%;
-		left:6.25%;
-	}
-	.x{
-		border:1px solid #f09;
-		animation:move 10s linear infinite;/*让它能动*/
-	/*可以加前缀，控制它的浏览器比如-moz-animation或者-webkit-animation*/
-		position:relative;
-		transform-style:preserve-3d;
-	}
-	.y{
-		top:0;
-		left:0;
-		border:2px solid #09f;
-		transform:rotateX(90deg);
-	}
-	.z{
-		top:0;
-		left:0;
-		border:1px solid #fc3;
-		transform:rotateY(90deg);
-	}
-	.x1{
-		border:1px solid #f09;
-		transform:translateZ(50px);
-	}
-	.y1{
-		border:1px solid #09f;
-		transform:rotateX(90deg) translateZ(50px);
-	}
-	.z1{
-		border:1px solid #fc3;
-		transform:rotateY(90deg) translateZ(50px);
-	}
-	.x2{
-		border:1px solid #f09;
-		transform:rotateX(180deg) translateZ(50px);
-		/*或者不旋转直接改成-50px  transform:translateZ(-50px);*/
-	}
-	.y2{
-		border:1px solid #09f;
-		transform:rotateX(270deg) translateZ(50px);
-	}
-	.z2{
-		border:1px solid #fc3;
-		transform:rotateY(270deg) translateZ(50px);
-	}
-	.xInner{
-		border:1px solid #f09;
-		width:100%;
-		top:50%;
-		
-	}
-	.yInner{
-		border:1px solid #09f;
-		height:100%;
-		left:50%;
-		transform:rotateX(90deg);
-	}
-	.zInner{
-		border:1px solid #fc3;
-		height:100%;
-		left:50%;
-		transform:rotateY(90deg);
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="google" content="notranslate">
+<link rel="icon" href="favicon.png">
+<title> Mirror </title>
+<script>
 
-	}
-	@keyframes move{
-		0%{transform:rotateX(0deg) rotateY(0deg);}
-		100%{transform:rotateX(360deg) rotateY(360deg);}
-	}//旋转起来
-	
- </style>
- </head>
- <body>
-	<div class="wrapper">
-		<div class="x">
-			<div class="x1"></div>
-			<div class="x2"></div>
-			<div class="xInner"></div>
-			<div class="y"></div>
-			<div class="y1"></div>
-			<div class="y2"></div>
-			<div class="yInner"></div>
-			<div class="z"></div>
-			<div class="z1"></div>
-			<div class="z2"></div>
-			<div class="zInner"></div>
-		</div>
-	</div>	
- </body>
+// blog config here
+// token should be separated by '#'. example: 5#c31bffc137f44faf7efc4a84da827g7ca2cfeaa
+var config = {"title":"blog","user":"BubbleM","repo":"blog","token":"d#8e5cf3a3ee1037fb4be9928fc1c7e0fa504e6e7","per_page":"18"}
+
+</script>
+
+<style>html.loading{height:100%;text-align:center}html.loading body{height:100%}html.loading body:before{content:'';width:30px;height:30px;-webkit-border-radius:30px;border-radius:30px;-webkit-animation:loading 1.5s linear forwards infinite;animation:loading 1.5s linear forwards infinite;display:inline-block;border-top:4px solid #0089fa;border-right:4px solid #ff002b;border-bottom:4px solid #ffa900;border-left:4px solid #00a753;vertical-align:middle}html.loading body:after{content:'';display:inline-block;height:100%;vertical-align:middle}html.loading .container{display:none}@keyframes loading{100%{transform:rotate(360deg)}}@-webkit-keyframes loading{100%{-webkit-transform:rotate(360deg)}}</style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left">
+            <div id="user"></div>
+            <div id="posts"></div>
+            <button class="button" id="next">More Posts</button>
+
+            <div id="footer">
+                <a href="https://github.com/LoeiFy/Mirror" target="_blank">Mirror</a> . Powered with <span>♥</span> by GitHub 
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div id="post"></div>
+        </div>
+
+    </div>
+
+<script type="text/javascript" src="build.fe676814e2cdb4862c6c.js"></script></body>
+
 </html>
