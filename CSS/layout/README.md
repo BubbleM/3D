@@ -20,3 +20,8 @@
 
 ## Table布局
 > 现在很少用Table布局。是因为Table一定要等到当前页面加载完成之后才能进行渲染，而且table写起来的代码比较大，样式不好控制。但是在一些情况下Table还是很需要的。
+
+## 宽度自适应三栏布局
+1. [自身浮动法](https://bubblem.github.io/blog/CSS/layout/adaptive_three_columns/index.html)
+2. [绝对定位法](https://bubblem.github.io/blog/CSS/layout/adaptive_three_columns/index1.html)
+3. [margin负值法](https://bubblem.github.io/blog/CSS/layout/adaptive_three_columns/index2.html)
