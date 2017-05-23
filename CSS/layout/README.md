@@ -23,5 +23,8 @@
 
 ## 宽度自适应三栏布局
 1. [自身浮动法](https://bubblem.github.io/blog/CSS/layout/adaptive_three_columns/index.html)
+最简单，应用了标签浮动跟随的特性。左栏左浮动，右栏右浮动，主体直接放后面，就实现了自适应。
 2. [绝对定位法](https://bubblem.github.io/blog/CSS/layout/adaptive_three_columns/index1.html)
+左右两栏采用绝对定位，分别固定于页面的左右两侧，中间的主体栏用左右margin值撑开距离，实现三栏自适应布局。
 3. [margin负值法](https://bubblem.github.io/blog/CSS/layout/adaptive_three_columns/index2.html)
+三栏均设置左浮动，设置左右两栏的margin-left让其回到正确位置。
