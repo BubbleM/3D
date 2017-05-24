@@ -20,6 +20,8 @@ position属性规定元素的定位类型，该属性在将动画特效脚本化
 
 >绝对定位如果父级不使用position:relative，而直接使用position:absolute绝对定位，这个时候将会以body标签为父级，使用position:absolute定义对象无论位于DIV多少层结构，都将会被拖出以<body>为父级（参考级）进行绝对定位。
 
+**z-index**： 默认值为0，也可取负值，无继承性。在IE下默认值为0，在Firefox下默认值为auto。z-index的数字越高越靠前，并且值必须为整数和正数（正数的整数）。
+
 ## fixed与absolute
 **共同点**：改变行内元素的呈现方式，display设置为block，让元素脱离普通流，不占据空间；默认会覆盖到非定位元素。
 
