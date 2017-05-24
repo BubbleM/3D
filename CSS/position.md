@@ -1,5 +1,6 @@
 # position
 position属性规定元素的定位类型，该属性在将动画特效脚本化时尤其有用。
+
 **取值**
 关键字值：static、sticky、relative、absolute、fixed
 全局值：inherit、initial、unset
@@ -20,7 +21,8 @@ position属性规定元素的定位类型，该属性在将动画特效脚本化
 >绝对定位如果父级不使用position:relative，而直接使用position:absolute绝对定位，这个时候将会以body标签为父级，使用position:absolute定义对象无论位于DIV多少层结构，都将会被拖出以<body>为父级（参考级）进行绝对定位。
 
 ## fixed与absolute
-**共同点**：改变行内元素的呈现方式，display设置为block，让元素脱离普通流，不占据空间；默然会覆盖到非定位元素。
+**共同点**：改变行内元素的呈现方式，display设置为block，让元素脱离普通流，不占据空间；默认会覆盖到非定位元素。
+
 **不同点**：absolute的根元素是可设置的，而fixed的根元素固定为浏览器窗口，当你滚动网页，fixed元素与浏览器窗口之间的距离是不变的。
 ## inherit
 规定从父元素继承position属性的值
