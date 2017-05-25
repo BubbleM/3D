@@ -16,7 +16,7 @@ position属性规定元素的定位类型，该属性在将动画特效脚本化
 设置为static 静态的 偏移量不起作用了
 ![这里写图片描述](http://img.blog.csdn.net/20170524125141825?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQnViYmxlTQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## relative
-相对定位，相对于其正常位置进行定位。具有和static相同的呈现方式，同样占有在文档流中的固定位置，后面的对象不会侵占或覆盖。与static不同的是，设置了relative的对象，可以通过top、left、right、bottom属性设定新的显示位置，这四个属性的取值是相对于文档流的前一个对象的
+相对定位，相对于**其自身在正常流中的位置**进行定位。具有和static相同的呈现方式，同样占有在文档流中的固定位置，后面的对象不会侵占或覆盖。与static不同的是，设置了relative的对象，可以通过top、left、right、bottom属性设定新的显示位置，这四个属性的取值是相对于文档流的前一个对象的
 
 添加了relative相对布局，效果如原始效果
 ![添加relative](http://img.blog.csdn.net/20170524124118714?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQnViYmxlTQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
