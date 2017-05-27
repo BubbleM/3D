@@ -79,6 +79,16 @@
 优点：结构语义化完全正确，代码量居中
 缺点：复用方式不当会造成代码量增加。由于IE6和IE7不支持:after，使用zoom:1触发haslayout
 
+## 总结
+通过对比，我们不难发现，其实以上列举的方法，无非有两类：
+1. 通过在浮动元素的末尾添加一个空元素，设置 clear：both属性，after伪元素其实也是通过 content 在元素的后面生成了内容为一个点的块级元素；
+2. 通过设置父元素 overflow 或者display：table 属性来闭合浮动。
+
+## BFC
+> 在CSS2.1里面有一个很重要的概念Block formatting contexts （块级格式化上下文），以下简称 BFC。
+CSS3里面对这个规范做了改动，称之为：flow root，并且对触发条件进行了进一步说明。
+
+
 清除浮动的效果
 ![这里写图片描述](http://img.blog.csdn.net/20170527133312946?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQnViYmxlTQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
