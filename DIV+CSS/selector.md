@@ -36,3 +36,9 @@ input[title="email"]{...}
 可继承的样式：font-size   font-family color ul li  dl  dd  dt
 不可继承的样式：border padding  margin  width  height
 
+## 优先级
+1. 开发者样式>读者样式>浏览器样式(除非使用!important标记)
+2. id选择器>(伪)类选择器>元素选择器
+3. 权重相同时取后面定义的样式
+> div h1 #_h > #div h1 > div h1.c_h > div h1 > h1
+
