@@ -83,8 +83,11 @@
 
 **清除浮动和闭合浮动的区别：**
 
-清除浮动 ：clear 对应CSS的属性有4个值，分别是clear、left、right、both、none;
+清除浮动：清除对应的单词是 clear，对应CSS中的属性是 clear：left | right | both | none；
 
 闭合浮动：更确切的含义是使浮动元素闭合，从而减少浮动带来的影响。
+>结论：用闭合浮动比清除浮动更加严谨，所以后文中统一称之为：闭合浮动。
+
+推荐好文章：http://www.iyunlu.com/view/css-xhtml/55.html
 
 
