@@ -82,6 +82,7 @@
 ![这里写图片描述](http://img.blog.csdn.net/20170527133312946?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQnViYmxlTQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 **清除浮动和闭合浮动的区别：**
+
 清除浮动 ：clear 对应CSS的属性有4个值，分别是clear、left、right、both、none;
 
 闭合浮动：更确切的含义是使浮动元素闭合，从而减少浮动带来的影响。
