@@ -11,6 +11,10 @@
 假如文档中的标记不能遵循DOCTYPE声明中所指定的DTD，这个文档除了不能通过代码校验之外，还有可能无法在浏览器中正确显示。
 
 ### 常用的声明
+> 在 HTML 4.01 中有三种 <!DOCTYPE> 声明。在 HTML5 中只有一种.
+> 在 HTML 4.01 中，<!DOCTYPE> 声明引用 DTD，因为 HTML 4.01 基于 SGML。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容。
+HTML5 不基于 SGML，所以不需要引用 DTD。
+
 1. HTML5 
 ```
 <!DOCTYPE html>
@@ -25,3 +29,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 ```
+
+详细参考http://www.w3school.com.cn/tags/tag_doctype.asp
