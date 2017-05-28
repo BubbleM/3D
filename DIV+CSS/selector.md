@@ -34,11 +34,21 @@ input[title="email"]{...}
    E F 后代元素选择器
 
 可继承的样式：font-size   font-family color ul li  dl  dd  dt
+
 不可继承的样式：border padding  margin  width  height
 
 ## 优先级
 1. 开发者样式>读者样式>浏览器样式(除非使用!important标记)
 2. id选择器>(伪)类选择器>元素选择器
 3. 权重相同时取后面定义的样式
+4. 继承得到的样式优先级最低
 > div h1 #_h > #div h1 > div h1.c_h > div h1 > h1
+
+## CSS优先级的计算规则:
+1. 元素标签中定义的样式(style属性)，加1,0,0,0
+2. 每个id选择器，加0,1,0,0
+3. 每个class选择器\属性选择器\伪类（hover）,加0,0,1,0
+4. 每个元素选择符\伪元素选择符(firstchild),加0,0,0,1
+然后将这四个数字分别累加，得到每个CSS定义的样式的优先级的值；从左向右逐位比较大小，数字大的CSS样式的优先级最高。
+
 
