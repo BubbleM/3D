@@ -24,3 +24,28 @@
 2. 去掉不必要的样式
 3. 合并相同的样式
 4. 尽可能缩小样式的大小
+
+## 为什么利用多个域名来存储网站资源会更有效
+- CDN缓存更方便
+- 突破浏览器并发限制
+- 节约cookie带宽
+- 节约主域名的连接数，优化页面响应速度
+- 防止不必要的安全问题
+
+## Form中input设置readonly和disabled的区别
+- readonly只针对text/password和textarea有效
+- disabled对所有表单元素都有效 包括select\radio\checkbox\button等
+
+### 给文字加粗
+1. b标签
+2. strong 
+
+## 标签alt与title
+- alt是给搜索引擎识别的  在图像无法显示时的替代文本；
+- title是关于元素的注释信息，主要是给用户解读的。当鼠标放到文字或图片上时，有title文字显示。
+
+
+## 其他
+1. border-top-width:设置上边框的宽度
+2. 一个表格可以包含多个tbody，但只能有一个thead和一个tfoot
+3. white-space:nowrap;overflow/hidden; 文字强制一行显示，超出的部分隐藏
