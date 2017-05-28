@@ -48,4 +48,8 @@
 ## 其他
 1. border-top-width:设置上边框的宽度
 2. 一个表格可以包含多个tbody，但只能有一个thead和一个tfoot
-3. white-space:nowrap;overflow/hidden; 文字强制一行显示，超出的部分隐藏
+3. white-space:nowrap;overflow:hidden; 文字强制一行显示，超出的部分隐藏
+4. 首行缩进两个字符 text-indent:2em;
+5. 去掉链接的虚线框 outline:none;
+6. 链接到电子邮箱 <A href="mailto://123@abcd.com">邮箱</A>
+
