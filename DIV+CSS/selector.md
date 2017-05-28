@@ -51,4 +51,9 @@ input[title="email"]{...}
 4. 每个元素选择符\伪元素选择符(firstchild),加0,0,0,1
 然后将这四个数字分别累加，得到每个CSS定义的样式的优先级的值；从左向右逐位比较大小，数字大的CSS样式的优先级最高。
 
+## 伪类
+[CSS1]: active、hover、link、visited
+[CSS2]: first-child、lang
+CSS新增伪类：
+>常用于控制表单控件的有:enabled、:disabled（表示控制表单控件的禁用状态）:checked（表示单选框或复选框被选中）
 
