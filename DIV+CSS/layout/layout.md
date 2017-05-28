@@ -25,3 +25,11 @@
  <div id="right" style="height: 100px;width: 280px;">右侧</div>
 </div>
 ```
+### 返回顶部的悬浮效果
+```css
+<div style="position: fixed;top: 50%;left:50%;margin:-250px 0 0 -250px;width: 500px;height: 500px;z-index: 999;">
+	<a href="">
+		<img src="" alt="弹出广告图"/>
+	</a>
+</div>
+```
